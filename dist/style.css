@@ -26,7 +26,30 @@
 @media(max-width:390px){.brand small{display:none}.mission h1{font-size:19px}.icon{padding:0 9px}.arena-bottom span{font-size:10px}.selection p{font-size:12px;line-height:1.5}}
 @media(max-width:760px) and (orientation:landscape){header,.mission,.panel-title,.intro,footer{display:none}.game-layout{grid-template-columns:minmax(0,1fr) 230px;gap:8px;padding:6px 0}aside{display:flex;flex-direction:column}.arena{order:0}#cards{order:0;grid-template-columns:repeat(3,1fr)}.tower-card{min-height:72px}.selection{order:0}.wave-info{order:0}#start{order:0;position:static}.controls{order:0}.hud{padding:7px 9px}canvas{min-height:0}.platforms{grid-template-columns:repeat(6,1fr)} }
 
-.intel-box{border-top:1px solid var(--line);padding:16px 0 13px}.intel-box .eyebrow{font-size:9px;margin-bottom:7px}.intel-box strong{display:block;font-size:12px;font-weight:500;color:#c7d4da;line-height:1.5}.enemy-legend{display:flex;gap:9px;flex-wrap:wrap;margin-top:9px;color:#78909c;font:9px ui-monospace,monospace}.abilities{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:4px}.abilities button{min-height:54px;text-align:left;padding:8px 10px;font:700 10px ui-monospace,monospace;letter-spacing:.5px;border-color:#38505d;background:linear-gradient(145deg,#152733,#101b25)}.abilities button:first-child{color:#69e6d5}.abilities button:last-child{color:#c993ff}.abilities button span{display:block;margin-top:5px;color:#8fa2ad;font-size:9px;font-weight:400}.upgrade-row{flex-wrap:wrap}.upgrade-row #priority{flex-basis:100%;color:#bed0d8}
+.intel-box{border-top:1px solid var(--line);padding:16px 0 13px}.intel-box .eyebrow{font-size:9px;margin-bottom:7px}.intel-box strong{display:block;font-size:12px;font-weight:500;color:#c7d4da;line-height:1.5}.enemy-legend{display:flex;gap:9px;flex-wrap:wrap;margin-top:9px;color:#78909c;font:9px ui-monospace,monospace}.abilities{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:4px}.abilities button{min-height:54px;text-align:left;padding:8px 8px;font:700 9px ui-monospace,monospace;letter-spacing:.2px;border-color:#38505d;background:linear-gradient(145deg,#152733,#101b25)}.abilities button:first-child{color:#eaf7ff}.abilities button:nth-child(2){color:#69e6d5}.abilities button:last-child{color:#c993ff}.abilities button.active{border-color:#fff;background:#253846}.abilities button span{display:block;margin-top:5px;color:#8fa2ad;font-size:8px;font-weight:400}.upgrade-row{flex-wrap:wrap}.upgrade-row #priority{flex-basis:100%;color:#bed0d8}
 body.surge-active .arena{box-shadow:0 0 34px #c993ff1f}
 @media(max-width:760px){#cards{grid-template-columns:repeat(2,minmax(0,1fr))}.tower-card{min-height:76px;display:grid;grid-template-columns:38px 1fr auto;text-align:left;gap:8px;padding:8px}.tower-icon{margin:0}.tower-copy small{display:block;font-size:9px}.price{margin:0}.intel-box{order:2;padding:11px 2px 8px}.abilities{order:2;margin:0}.abilities button{min-height:50px}.wave-info{order:2}.selection{order:1}.enemy-legend{font-size:8px}.upgrade-row button{min-height:44px}}
 @media(max-width:760px) and (orientation:landscape){#cards{grid-template-columns:repeat(2,1fr)}.tower-card{min-height:52px}.tower-copy small{display:none}.intel-box,.abilities{order:0;padding:5px 0}.enemy-legend{display:none}.selection p{font-size:10px;line-height:1.25}.selection{padding:5px 0}.abilities button{min-height:38px}.wave-info{padding:6px 0}}
+
+/* Board-first layout: the battlefield receives the largest useful share of every viewport. */
+@media(min-width:761px){main{max-width:1800px;padding:0 24px}header{height:70px}.mission{padding:17px 0}.game-layout{grid-template-columns:minmax(0,1fr) 292px;gap:18px}}
+canvas{height:auto;aspect-ratio:auto}
+@media(max-width:760px) and (orientation:portrait){
+ main{padding:0 7px}
+ header{height:52px}.brand{font-size:15px}.brand small,.mission,.panel-title,.intro{display:none}.mark{width:29px;height:32px;font-size:21px}
+ .game-layout{gap:7px}
+ #cards{order:-2;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+ .tower-card{min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:2px;text-align:center;padding:5px 2px}
+ .tower-icon{width:25px;height:25px;flex:0 0 25px;margin:0 auto;font-size:17px}.tower-copy strong{font-size:10px}.tower-copy small{display:none}.price{font-size:10px;margin:0}
+ .arena{order:0}.hud{padding:8px 6px}.hud strong{font-size:16px}.hud span{font-size:7px}
+ canvas{width:100%;height:auto;min-height:0}
+ .arena-bottom{padding:7px 9px}.arena-bottom span{font-size:10px}
+ .platforms{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:4px;padding:0 7px 7px}.platforms::-webkit-scrollbar{display:none}.platforms button{flex:0 0 43px}
+ .selection{padding:10px 2px 3px}.selection p{font-size:12px}.intel-box{padding:9px 2px 6px}
+}
+@media(max-width:760px) and (orientation:landscape){
+ main{padding:0 5px}.game-layout{grid-template-columns:minmax(0,1fr) 215px;gap:6px}
+ .arena-bottom,.platforms{display:none}.tower-card{padding:4px}.hud strong{font-size:14px}.hud span{font-size:7px}
+}
+#start.early{background:#f4d48e;border-color:#f4d48e;color:#261d0f;animation:earlyPulse 1.4s ease-in-out infinite}@keyframes earlyPulse{50%{box-shadow:0 0 0 4px #f4d48e22,0 0 24px #f4d48e26}}
+.branch{flex:1 1 calc(50% - 4px);min-height:58px;text-align:left;color:#d9e3e7}.branch small{display:block;color:#879ba6;font-size:9px;line-height:1.35;margin-top:4px}
