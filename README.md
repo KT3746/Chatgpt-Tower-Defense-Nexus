@@ -11,13 +11,16 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 ## Recursos
 
 - Quatro torres com funções distintas: Pulso, Canhão, Cryo e Arco
-- Evolução até o nível 3 e venda de torres
+- Evolução até o nível 3, com duas especializações finais por torre
 - Prioridade de alvo configurável em cada torre
 - Inimigos rápidos, blindados, protegidos por escudo e três chefes
 - Combinações entre torres, como Cryo + Canhão
+- Sentinela móvel que pode ser reposicionada no tabuleiro
 - Poderes manuais de EMP e Sobrecarga com tempo de recarga
+- Opção de chamar a próxima onda antecipadamente por um bônus de risco
 - Prévia da composição de cada uma das quinze ondas
 - Velocidade dupla, pausa, efeitos sonoros opcionais e recorde local
+- Tabuleiro vertical exclusivo para celular, sem reduzir o mapa de computador
 - Interface responsiva com controles próprios para celular e modo paisagem
 - Sem dependências ou instalação: HTML, CSS e JavaScript
 
