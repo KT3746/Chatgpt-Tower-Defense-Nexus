@@ -17,6 +17,11 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Inimigos elite nas ondas finais
 - Combinações entre torres, como Cryo + Canhão
 - Sentinela móvel que pode ser reposicionada no tabuleiro
+- Vinte e oito plataformas de construção em cada orientação
+- Terrenos táticos: elevação, potência e relé de energia
+- Rede de sinergia entre torres diferentes posicionadas próximas
+- Vantagens específicas contra rápidos, escudos, grupos e blindados
+- Juros de reserva por créditos guardados entre ondas
 - Poderes manuais de EMP e Sobrecarga com tempo de recarga
 - Opção de chamar a próxima onda antecipadamente por um bônus de risco
 - Prévia da composição de cada uma das quinze ondas
