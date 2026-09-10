@@ -53,3 +53,28 @@ canvas{height:auto;aspect-ratio:auto}
 }
 #start.early{background:#f4d48e;border-color:#f4d48e;color:#261d0f;animation:earlyPulse 1.4s ease-in-out infinite}@keyframes earlyPulse{50%{box-shadow:0 0 0 4px #f4d48e22,0 0 24px #f4d48e26}}
 .branch{flex:1 1 calc(50% - 4px);min-height:58px;text-align:left;color:#d9e3e7}.branch small{display:block;color:#879ba6;font-size:9px;line-height:1.35;margin-top:4px}
+
+/* Illustrated production art: each arsenal icon is cropped from the generated 4x4 atlas. */
+.tower-icon{background-image:url('assets/nexus-atlas.webp');background-size:400% 400%;background-repeat:no-repeat;color:transparent;font-size:0;background-color:#071018}
+.tower-card[data-type="0"] .tower-icon{background-position:0 0}.tower-card[data-type="1"] .tower-icon{background-position:33.333% 0}.tower-card[data-type="2"] .tower-icon{background-position:66.666% 0}.tower-card[data-type="3"] .tower-icon{background-position:100% 0}
+
+/* Portrait command deck: battlefield fills the phone; controls float over its safe edges. */
+@media(max-width:760px) and (orientation:portrait){
+ html,body{height:100%;overflow:hidden;background:#03070b}body{padding:0}
+ main{height:100dvh;max-width:none;padding:0}header,.mission,footer,.panel-title,.intro,.arena-bottom,.platforms,.wave-info,.intel-box{display:none!important}
+ .game-layout{display:block;height:100dvh}.arena{height:100dvh;border:0;border-radius:0;background:#050b10;position:relative}.field{height:100dvh;display:grid;place-items:center;overflow:hidden}
+ canvas{width:100%;height:auto;max-height:100dvh;min-height:0;filter:saturate(1.08) contrast(1.03)}
+ .hud{position:fixed;z-index:24;top:calc(5px + env(safe-area-inset-top));left:6px;right:6px;border:1px solid #8bdde12b;border-radius:10px;padding:7px 6px;gap:3px;background:#071018d9;backdrop-filter:blur(12px);box-shadow:0 8px 28px #0008}
+ .hud>div{padding-left:5px}.hud span{font-size:6px}.hud strong{font-size:14px}.hud small{font-size:8px}
+ .field-label{position:fixed;z-index:23;top:calc(52px + env(safe-area-inset-top));left:9px;padding:5px 8px;border-radius:12px;background:#071018b8;backdrop-filter:blur(7px);font-size:7px}
+ aside{display:contents!important}
+ #cards{position:fixed;z-index:30;left:6px;right:6px;bottom:calc(6px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:5px;border:1px solid #8bdde12b;border-radius:12px;background:#071018e8;backdrop-filter:blur(14px);box-shadow:0 -10px 36px #0009}
+ .tower-card{min-height:56px;height:56px;margin:0;display:grid;grid-template-columns:34px 1fr;grid-template-rows:1fr 1fr;gap:0 4px;padding:5px;text-align:left;border-radius:8px;background:#111d26db}
+ .tower-card .tower-icon{grid-row:1/3;width:34px;height:42px;align-self:center;margin:0;border-radius:6px;flex:0 0 auto}.tower-copy strong{font-size:9px}.tower-copy small{display:none}.tower-card .price{align-self:start;font-size:9px;margin:0}.tower-card.active{box-shadow:inset 0 0 18px color-mix(in srgb,var(--accent) 18%,transparent)}
+ #start{position:fixed;z-index:29;left:6px;bottom:calc(73px + env(safe-area-inset-bottom));width:44%;min-height:49px;padding:9px 10px;border-radius:10px;font-size:11px;box-shadow:0 8px 28px #000b}
+ .abilities{position:fixed;z-index:29;right:6px;bottom:calc(73px + env(safe-area-inset-bottom));width:52%;height:49px;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:0}.abilities button{min-height:49px;height:49px;padding:5px 4px;text-align:center;font-size:7px;border-radius:9px}.abilities button span{font-size:6px;margin-top:3px}
+ .controls{position:fixed;z-index:28;right:7px;top:calc(51px + env(safe-area-inset-top));display:flex;gap:3px;margin:0}.controls button{min-height:32px;height:32px;min-width:34px;padding:3px 6px;font-size:8px;background:#071018d5;backdrop-filter:blur(8px)}.controls button:last-child{flex:0 0 34px;font-size:16px}
+ .selection{display:none;position:fixed;z-index:35;left:7px;right:7px;bottom:calc(135px + env(safe-area-inset-bottom));max-height:235px;overflow:auto;margin:0;padding:13px 14px;border:1px solid #6b8996;border-radius:12px;background:#09151df4;backdrop-filter:blur(16px);box-shadow:0 16px 50px #000d}.tower-selected .selection{display:block}.selection h3{margin:3px 0}.selection p{font-size:10px;line-height:1.45}.selection .eyebrow{margin-bottom:4px}.upgrade-row{margin-top:7px}.branch{min-height:52px}
+ #toast{bottom:calc(139px + env(safe-area-inset-bottom));z-index:40}.tower-selected #toast{bottom:calc(380px + env(safe-area-inset-bottom))}
+ #overlay{position:fixed;z-index:50;inset:0;background:#03080ded}
+}
