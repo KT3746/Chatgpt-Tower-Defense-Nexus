@@ -14,6 +14,7 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Evolução até o nível 3, com duas especializações finais por torre
 - Prioridade de alvo configurável em cada torre
 - Inimigos rápidos, blindados, protegidos por escudo e três chefes
+- Inimigos elite nas ondas finais
 - Combinações entre torres, como Cryo + Canhão
 - Sentinela móvel que pode ser reposicionada no tabuleiro
 - Poderes manuais de EMP e Sobrecarga com tempo de recarga
@@ -21,7 +22,9 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Prévia da composição de cada uma das quinze ondas
 - Velocidade dupla, pausa, efeitos sonoros opcionais e recorde local
 - Tabuleiro vertical exclusivo para celular, sem reduzir o mapa de computador
-- Interface responsiva com controles próprios para celular e modo paisagem
+- Cenários, torres, inimigos, chefe e efeitos com arte original em alta resolução
+- Interface de combate em tela cheia no celular, com controles flutuantes
+- Imagens otimizadas em WebP para reduzir o carregamento no Android
 - Sem dependências ou instalação: HTML, CSS e JavaScript
 
 ## Executar localmente
