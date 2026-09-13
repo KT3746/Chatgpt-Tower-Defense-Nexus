@@ -1,4 +1,4 @@
-# ChatGPT Tower Defense — NEXUS
+# Tower Defense
 
 Um Tower Defense futurista em português, criado para funcionar no navegador de computadores e celulares.
 
@@ -25,7 +25,8 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Poderes manuais de EMP e Sobrecarga com tempo de recarga
 - Opção de chamar a próxima onda antecipadamente por um bônus de risco
 - Prévia da composição de cada uma das quinze ondas
-- Velocidade dupla, pausa, efeitos sonoros opcionais e recorde local
+- Velocidade dupla, pausa, efeitos sonoros ligados por padrão e recorde local
+- Áudio ativado automaticamente no primeiro toque e controle de som acessível no celular
 - Tabuleiro vertical exclusivo para celular, sem reduzir o mapa de computador
 - Cenários, torres, inimigos, chefe e efeitos com arte original em alta resolução
 - Interface de combate em tela cheia no celular, com controles flutuantes
