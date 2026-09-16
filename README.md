@@ -22,6 +22,8 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Rede de sinergia entre torres diferentes posicionadas próximas
 - Vantagens específicas contra rápidos, escudos, grupos e blindados
 - Juros de reserva por créditos guardados entre ondas
+- Economia ajustada para exigir escolhas de construção e evolução nas ondas finais
+- Identificação da composição da onda diretamente no campo, inclusive no celular
 - Poderes manuais de EMP e Sobrecarga com tempo de recarga
 - Opção de chamar a próxima onda antecipadamente por um bônus de risco
 - Prévia da composição de cada uma das quinze ondas
