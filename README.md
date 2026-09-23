@@ -37,7 +37,9 @@ Escolha uma torre, toque em uma plataforma numerada e inicie a onda. Sobreviva �
 - Cenários, torres, inimigos, chefe e efeitos com arte original em alta resolução
 - Interface de combate em tela cheia no celular, com controles flutuantes
 - Comandos compactos, resposta tátil e plataformas reposicionadas para evitar áreas cobertas no celular
+- Ajuda acessível pelo botão ? no celular; pausa e preços das torres atualizados durante a batalha
 - Salvamento automático local com recuperação pausada após interrupções do navegador
+- Ao girar o celular e recarregar, inimigos mantêm o avanço proporcional na rota
 - Imagens otimizadas em WebP para reduzir o carregamento no Android
 - Sem dependências ou instalação: HTML, CSS e JavaScript
 
